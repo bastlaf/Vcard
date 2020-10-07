@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:'vide1 vcard1 vide2' 
+                        'vide3 vcard2 vide4'
+                        'vide5 vide6 vide7';
+    margin : 10px;
+    width: 100%;
+    height: 1000px;
+    background-color: lightslategray;
+}
+.face {
+    grid-area: vcard1;
+    background-image: url("card.jpg");
+    border-radius: 2%;
+    background-size: cover;
+}
+.pile {
+    grid-area: vcard2;
+    background-image: url("card.jpg");
+    border-radius: 2%;
+    background-size: cover;
+    margin-top: 10px;
+}
+.me {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
