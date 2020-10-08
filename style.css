@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:'vide1 vcard1 vide2' 
-                        'vide3 vcard2 vide4'
-                        'vide5 vide6 vide7';
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 0.7fr 0.3fr 1fr 1fr;
+    grid-template-areas:'vide1 vcard1 vcard2 vide2' 
+                        'vide3 vcard3 vcard4 vide4'
+                        'vide5 vcard5 vcard6 vide6'
+                        'vide7 vide8 vide9 vide10';
     margin : 10px;
-    width: 100%;
+    width: 1300px;
     height: 1000px;
     background-color: rgb(116, 116, 116);
     font-family: 'Sansita Swashed', cursive;
 }
 .face {
-    grid-area: vcard1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
     display: flex;
     background-image: url("fond.jpg");
     border-radius: 20px;
@@ -21,34 +25,35 @@ body {
     box-shadow: 8px 8px 4px rgb(53, 53, 53);
 }
 .me {
+    text-align: center;
+    position: absolute;
+    left: 300px;
+    top: 80px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: solid 2px black;
-    margin-top: 60px;
-    margin-left: 20px;
 }
 .textface {
-    grid-area: vcard1;
     text-align: center;
-    margin-left: 30%;
-    margin-top: 5%;
+    position: absolute;
+    left: 700px;
+    top: 50px;
 }
 .textfaceh2 {
-    grid-area: vcard1;
     text-align: center;
+    position: absolute;
+    left: 640px;
+    top: 100px;
     font-size: small;
-    margin-left: 40%;
-    margin-top: 14%;
-    margin-right: 10%;
 }
 .lorem {
-    grid-area: vcard1;
+    grid-area: vcard2;
     text-align: justify;
     font-size: small;
-    margin-left: 40%;
-    margin-top: 25%;
-    margin-right: 10%;
+    margin-top: 30%;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 .git {
     width: 40px;
@@ -58,10 +63,8 @@ body {
     width: 40px;
 }
 .nav {
-    grid-area: vcard1;
-    margin-left: 40%;
-    margin-top: 40%;
-    margin-right: 10%;
+    grid-area: vcard4;
+    margin-top: 20px;
     text-align: center;
     filter: brightness(0);
 }
