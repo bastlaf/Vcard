@@ -10,7 +10,7 @@ body {
     margin : 10px;
     width: 1300px;
     height: 1000px;
-    background-color: rgb(116, 116, 116);
+    background-image: url(fondecran.png);
     font-family: 'Sansita Swashed', cursive;
 }
 .face {
